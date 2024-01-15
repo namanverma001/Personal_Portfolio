@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 59);
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(75, 75, 217);
+    font-size: 1.3rem;
+
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.firstsection>div {
+    width: 40%;
+}
+
+.leftsection {
+
+    font-size: 3rem;
+
+}
+
+.leftsection .buttons {
+
+ padding: 50px 0;
+
+}
+.leftsection .btn {
+  padding: 15px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.rightsection img {
+    width: 70%;
+    margin-top: 10px;
+    border-radius: 35%;
+}
+
+.purple {
+    color: rgb(114, 23, 199);
+}
+
+#element {
+    color: rgb(114, 23, 199);
+}
+
+.about-me {
+    padding: 4rem;
+    background: var(--gradientvp);
+    color: #fff;
+    text-align: center;
+  }
+  .about-me__title {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    transition: all 0.5s;
+  }
+  .about-me__title:hover {
+    letter-spacing: 10px;
+    cursor: default;
+  }
+  .about-me__content {
+    font-size: 1.8rem;
+    padding: 3rem;
+    line-height: 1.6;
+  }
+
+  .skills {
+    background-color:rgb(18, 18, 59);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  @media only screen and (max-width: 56.25em) {
+    .skills {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+    }
+  }
+  .skills__title {
+    font-size: 4rem;
+    margin: 4rem 0;
+    display: block;
+    background: var(--gradientvp);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s;
+    color: white;
+  }
+  .skills__title:hover {
+    transform: translateX(5rem);
+    cursor: default;
+  }
+  .skills__container {
+    margin: 4rem 0;
+    font-size: 3rem;
+    line-height: 2;
+    font-family: "Chivo Mono", sans-serif;
+    color: #929292;
+  }
+  .skills__item::marker {
+    color: rgb(53, 10, 242);
+  }
+
+
+  .education-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.education-item {
+  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.education-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.education-content {
+    text-align: left;
+}
+
+.education-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom:10px;
+}
+
+.education-institution {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.education-duration {
+    color: white;
+}
+
+.project-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.project-description {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+.title{
+  font-size: 4rem;
+}
+
+#social-media {
+  background-color: rgb(18, 18, 59);
+  padding: 20px;
+  text-align: center;
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-icons a {
+  display: block;
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+  text-align: center;
+  text-decoration: none;
+  color: white; /* Color of the icon */
+  border: 1px solid white; /* Border color for the icon */
+  border-radius: 50%; /* Make it a circle */
+  line-height: 63px; /* Vertically center the icon */
+  font-size: 40px; /* Adjust the icon size as needed */
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: purple; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+  border-color: purple; /* Border color on hover */
+}
+
+.tag{
+  font-size: 4rem;
+  font-weight: 300;
+
+}
+
+
+.contact-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1rem;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.github
+{
+  text-decoration: none;
+  color: white;
+}
+
+.github:hover
+{
+  background-color: blue;
+}
+
+
