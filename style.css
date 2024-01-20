@@ -8,6 +8,36 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+.h2 {
+  position: relative;
+  font-size: 3.5vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+
+.h2::before {
+  content: attr(textdeco); /* Use pseudo-element content as specified in HTML */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #383d52;
+  border-radius: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
 
 nav {
     display: flex;
@@ -91,78 +121,51 @@ nav ul li a:hover {
     color: rgb(114, 23, 199);
 }
 
-.about-me {
-    padding: 4rem;
-    background: var(--gradientvp);
-    color: #fff;
-    text-align: center;
-  }
-  .about-me__title {
-    font-size: 1.5rem;
-    margin: 2rem 0;
-    transition: all 0.5s;
-  }
-  .about-me__title:hover {
-    letter-spacing: 10px;
-    cursor: default;
-  }
-  .about-me__content {
-    font-size: 1.8rem;
-    padding: 3rem;
-    line-height: 1.6;
-  }
+/* Add styling for the new sections */
 
-  .skills {
-    background-color:rgb(18, 18, 59);
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-  }
-  @media only screen and (max-width: 56.25em) {
-    .skills {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 80vh;
-    }
-  }
-  .skills__title {
-    font-size: 4rem;
-    margin: 4rem 0;
-    display: block;
-    background: var(--gradientvp);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: all 0.5s;
-    color: white;
-  }
-  .skills__title:hover {
-    transform: translateX(5rem);
-    cursor: default;
-  }
-  .skills__container {
-    margin: 4rem 0;
-    font-size: 3rem;
-    line-height: 2;
-    font-family: "Chivo Mono", sans-serif;
-    color: #929292;
-  }
-  .skills__item::marker {
-    color: rgb(53, 10, 242);
-  }
-
-
-  .education-section {
-    padding: 80px 0;
+.about-section,
+.skills-section {
+    padding: 40px 20px;
     text-align: center;
 }
 
-.section-title {
-    font-size: 5rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: white;
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill:hover
+{
+    background-color: blue;
+    color: black;
+}
+.skill a{
+  text-decoration: none;
+  color: white;
+}
+
+.skill {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+.education
+{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
 }
 
 .education-item {
