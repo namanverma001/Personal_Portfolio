@@ -9,8 +9,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .h2 {
-    font-style: italic;
-  position: relative;
+
+    position: relative;
   font-size: 3.5vw;
   color: #252839;
   -webkit-text-stroke: 0.3vw #383d52;
